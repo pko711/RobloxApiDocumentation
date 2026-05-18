@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository is not actively maintained. Use https://github.com/Paficent/Roblox-Api-Tracker instead.
+
 # Documentation
   Official ROBLOX Web API documentation. Except it isn't an insecure person and isn't hiding anything.\
   Note: This was not posted by an official Roblox engineer. Also note that this is not *completely* done yet as I have other things to do at the moment, more updates will come though
