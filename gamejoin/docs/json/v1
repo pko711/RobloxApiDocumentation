@@ -725,6 +725,28 @@
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
           "type": "string"
+        },
+        "isoContext": {
+          "description": "Internal usage only field for some request context.",
+          "type": "string"
+        },
+        "eventId": {
+          "format": "uuid",
+          "description": "See \"Points of Interest\" project. A GUID that the developer has mapped to a special piece in their experience",
+          "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
+          "type": "string"
         }
       }
     },
@@ -764,6 +786,9 @@
           "format": "int32",
           "description": "The player's current position in the join queue. Only used when trying to join full servers. 0 if not queued",
           "type": "integer"
+        },
+        "statusData": {
+          "$ref": "#/definitions/Roblox.Web.GameJoin.StatusData"
         }
       }
     },
@@ -875,6 +900,19 @@
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
           "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
+          "type": "string"
         }
       }
     },
@@ -916,6 +954,19 @@
         },
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
+          "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
           "type": "string"
         }
       }
@@ -962,6 +1013,19 @@
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
           "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
+          "type": "string"
         }
       }
     },
@@ -1006,6 +1070,19 @@
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
           "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
+          "type": "string"
         }
       }
     },
@@ -1048,6 +1125,19 @@
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
           "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
+          "type": "string"
         }
       }
     },
@@ -1084,6 +1174,19 @@
         },
         "channelName": {
           "description": "String representing channel name in RCC Channel 2.0.\r\nNote: Only internal users (email address ending in roblox.com and verified) can use this feature.\r\nFor other users, this field should be null, otherwise the request will be rejected.",
+          "type": "string"
+        },
+        "isImmersiveAdsTeleport": {
+          "description": "Is this an Immersive Ads Teleport request.",
+          "type": "boolean"
+        },
+        "joinOrigin": {
+          "description": "The JoinOrigin of a gamejoin request, as propagated from the game client.",
+          "type": "string"
+        },
+        "partyId": {
+          "format": "uuid",
+          "description": "The ID of the player's current party, if any",
           "type": "string"
         }
       }
@@ -1389,6 +1492,15 @@
         },
         "PrivateServerID": {
           "type": "string"
+        },
+        "EventID": {
+          "type": "string"
+        },
+        "EphemeralEarlyPubKey": {
+          "type": "string"
+        },
+        "PartyId": {
+          "type": "string"
         }
       }
     },
@@ -1413,6 +1525,37 @@
         "Port": {
           "format": "int32",
           "type": "integer"
+        }
+      }
+    },
+    "Roblox.Web.GameJoin.StatusData": {
+      "type": "object",
+      "properties": {
+        "creatorExperienceBan": {
+          "$ref": "#/definitions/Roblox.Web.GameJoin.StatusData.CreatorExperienceBanData"
+        }
+      }
+    },
+    "Roblox.Web.GameJoin.StatusData.CreatorExperienceBanData": {
+      "type": "object",
+      "properties": {
+        "startTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "durationSeconds": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "displayReason": {
+          "type": "string"
+        },
+        "displayReasonTextFilterStatus": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "isInherited": {
+          "type": "boolean"
         }
       }
     }
